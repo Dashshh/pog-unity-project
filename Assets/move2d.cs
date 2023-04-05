@@ -25,7 +25,7 @@ public class move2d : MonoBehaviour
         {
             rigidbody2D.velocity = Vector2.up * Speed;
         }
-        else if (Input.GetKey(downKey) && transform.position.y < -5)
+        else if (Input.GetKey(downKey) && transform.position.y > -5)
         {
             rigidbody2D.velocity = Vector2.down * Speed;
         }
